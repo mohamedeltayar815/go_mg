@@ -197,7 +197,7 @@ def Links(request):
 
 
 def front(request):
-	Links = Link.objects.all()
+	
 	form = massageForm()
 	if request.method == 'POST':
 		# print('Printing POST:', request.POST)
@@ -209,7 +209,7 @@ def front(request):
 	context = {'form': form}
 
 
-	return render(request, 'accounts/Links.html', {'Links': Links}, context)
+	return render(request, 'accounts/Links.html',  context)
 
 def frist(request):
     context = {}
