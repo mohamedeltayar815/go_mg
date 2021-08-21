@@ -201,10 +201,6 @@ header
 --------------------------------------------- 
 */
 
-.header-area .main-nav {
-    min-height: 80px;
-    background: transparent;
-
 .background-header {
   background: rgba(250,250,250,0.99) !important;
   height: 80px!important;
@@ -621,7 +617,7 @@ banner
 
 .video-overlay {
     position: absolute;
-
+    background-color: rgba(35,45,57,0.8);
     top: 0;
     left: 0;
     bottom: 7px;
@@ -714,7 +710,7 @@ subscribe الولادة الطبيعية تحت الماء
 
 #call-to-action {
   padding: 120px 0px;
-  background-image: url(../images/197499248_4234092929985182_777218865002544073_n.jpg);
+  background-image: url(../images/WhatsApp%20Image%202020-12-16%20at%2004.29.27.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -874,7 +870,7 @@ schedule
 
 #schedule table tbody tr td {
   border-right: 1px solid #fff;
-  height: 70px;
+  height: 100px;
 }
 
 #schedule table tr td {
@@ -954,7 +950,6 @@ trainers
 --------------------------------------------- 
 */
 
-
 #restex {
 
 
@@ -1032,9 +1027,9 @@ trainers
   padding: 0px;
   display: inline-block;
   margin-left: 10px;
-    margin-right: 10px;
-   border-height: 660px;
-   border-background:#25818C;
+  margin-right: 10px;
+  border-height: 660px;
+  border-background:#25818C;
 
 }
 
@@ -1339,10 +1334,51 @@ responsive
   .feature-item .right-content a.text-button {
     margin-left: 130px;
   }
-
-
-
+}
+#o1 {
+  position: fixed;
+  top:300px;
+  right:0px;
   }
-
-
-
+  
+  
+   #o2 {
+  position: fixed;
+  top:340px;
+  right:0px;
+  }
+  
+  
+  
+   #o3 {
+  position: fixed;
+  top:380px;
+  right: 0px;
+  }
+  
+  
+   #o4 {
+  position: fixed;
+  top:420px;
+  right:-8px;
+  }
+  
+  
+  
+  
+  /*---------------------------------------
+      Video section
+  -----------------------------------------*/
+  #video iframe {
+    border: none;
+    text-align: right;
+  }
+  
+  
+  @media (max-width: 980px) {
+  
+  #video iframe {
+      margin-top: 42px;
+      text-align: right;
+    }
+  }
