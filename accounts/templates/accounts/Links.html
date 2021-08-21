@@ -67,74 +67,6 @@ right:-8px;
 }
 
 
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-#top text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 2.5s;
-  animation-name: fade;
-  animation-duration: 2.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  #top text {font-size: 11px}
-}
-
       </style>
     </head>
     <body>
@@ -157,15 +89,15 @@ img {vertical-align: middle;}
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="#" class="logo"> <img src="{% static 'assets/images/1608070855306.png' %}" width="80px" height="45px" alt="waves"></a>
+                        <a href="#" class="logo"> <img src="/static/assets/images/1608070855306.png" width="80px" height="45px" alt="waves"></a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="{% url 'front' %}" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="{% url 'vlog' %}">vlog</a></li>
-                            <li class="scroll-to-section"><a href="{% url 'blog' %}">blog</a></li>
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="/vlog/">vlog</a></li>
+                            <li class="scroll-to-section"><a href="/blog/">blog</a></li>
                             <li class="scroll-to-section"><a href="#contact-us">Contact</a></li>
-                            <li class="main-button"><a href="{% url 'home' %}">Sign Up</a></li>
+                            <li class="main-button"><a href="/home/">Sign Up</a></li>
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -179,56 +111,15 @@ img {vertical-align: middle;}
     <!-- ***** Header Area End ***** -->
     <!-- ***** Main Banner Area Start ***** -->
     <div class="main-banner" id="top">
-        <div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext"> </div>
-  <img src="{% static 'assets/images/IMG-20210713-WA0006.jpg' %}" style="width:100% ; height: 700px;">
-  <div class="text">Caption Text</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext"> </div>
-  <img src="{% static 'assets/images/IMG-20210714-WA0003.jpg' %}" style="width:100% ; height: 700px;">
-  <div class="text">Caption Two</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext"> </div>
-  <img src="{% static 'assets/images/IMG_6584.jpg' %}" style="width:100% ; height: 700px;">
-  <div class="text">Caption Three</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext"> </div>
-  <img src="{% static 'assets/images/IMG-20210714-WA0001.jpg' %}" style="width:100% ; height: 700px;">
-  <div class="text">Caption Three</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext"> </div>
-  <img src="{% static 'assets/images/215415929_145207674355378_5081455679295769403_n.jpg' %}" style="width:100% ; height: 700px;">
-  <div class="text">Caption Three</div>
-</div>
-
-
-</div>
-<br>
-
-<div style="text-align:left">
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-
-</div>
+        <video autoplay muted loop id="bg-video">
+            <source src="/static/assets/images/gym-video.mp4" type=" video/mp4" />
+        </video>
         <div class="video-overlay header-text">
             <div class="caption">
                 <h6>رحلتك فى الحمل والمتابعة والولادة  </h6>
                 <h6>  مريحة  وامنة دائما  </h6>
                 <h6>  مع عيادة   </h6>
-                <h2>  <img src="{% static 'assets/images/1608070855306.png'%}" width="15%" height="15%" alt="waves"></h2>
+                <h2>  <img src="/static/assets/images/1608070855306.png" width="15%" height="15%" alt="waves"></h2>
                 <div class="main-button scroll-to-section">
                     <a href="#features">كونى جزء منا </a>
                 </div>
@@ -441,7 +332,7 @@ img {vertical-align: middle;}
                     </div>
                   </article>
                   <article id='tabs-3'>
-                    <img src="{% static 'assets/images/tv-on.jpg' %}" width="100%" height="100%" alt="Third Class">
+                    <img src="{% static 'assets/images/IMG-20210714-WA0006.jpg' %}" width="100%" height="100%" alt="Third Class">
                     <h4>جراحات المناظير  </h4>
                     <p>   </p>
                     <div class="main-button">
@@ -462,7 +353,7 @@ img {vertical-align: middle;}
 
 
                     <article id='tabs-6'>
-                    <img src="{% static 'assets/images/tv-on.jpg'%}" width="100%" height="100%"  alt="F6">
+                    <img src="{% static 'assets/images/IMG-20210714-WA0004.jpg'%}" width="100%" height="100%"  alt="F6">
                     <h4> التجميل النسائى  </h4>
                     <p>   </p>
                     <div class="main-button">
@@ -535,6 +426,7 @@ img {vertical-align: middle;}
                                     <td>الاحد</td>
                                 </tr>
                                 <tr>
+
                                     <td class="day-time">   </td>
                                     <td class="tuesday ts-item" data-tsmeta="t3">9:00 مساء</td>
                                     <td class="tuesday ts-item" data-tsmeta="t3">4:00 مساءً</td>
@@ -579,8 +471,8 @@ img {vertical-align: middle;}
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
                         <h2>اراء <em>   مرضانا </em>  </h2>
-                        <img src="{% static 'assets/images/Logo%20MG.jpg' %}" alt="">
-                        <p>  </p>
+                        <img src="/static/assets/images/Logo%2520MG.jpg" alt="">
+                        <p> ............................................................................................................................... </p>
                     </div>
                 </div>
             </div>
@@ -616,6 +508,7 @@ img {vertical-align: middle;}
         </div>
  </section>
     <!-- ***** Testimonials Ends ***** -->
+
 
 
 
@@ -692,28 +585,7 @@ img {vertical-align: middle;}
     <script src="{% static 'assets/js/accordions.js' %}"></script>
     <!-- Global Init -->
     <script src="{% static 'assets/js/custom.js' %}"></script>
-    <script>
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
-}
-
-    </script>
   </body>
 
 </html>
