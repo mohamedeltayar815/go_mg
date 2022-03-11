@@ -1382,3 +1382,84 @@ responsive
       text-align: right;
     }
   }
+
+
+@media (max-weight: 1000){
+
+
+#our-classes {
+  margin-bottom: 140px;
+}
+
+#our-classes #tabs ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+ #our-classes #tabs ul li {
+  display: inline-block;
+  width: 100%;
+  margin: 0px 5px;
+
+}
+#our-classes #tabs ul li:last-child {
+  margin-bottom: 0px;
+}
+#our-classes #tabs ul li a {
+    text-transform: capitalize;
+    width: 90%;
+    padding: 0px 5px;
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    font-size: 19px;
+    color: #232d39;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    transition: all 0.3s;
+    height: 90px;
+    overflow: hidden;
+}
+
+
+
+
+.feature-item .left-icon img {
+    float: left;
+    margin-right: 30px;
+    width: 100%;
+    /* display: flex; */
+    /* padding: 15%; */
+    padding: 0px 22%;
+}
+.feature-item {
+    display: inline-block;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+
+.feature-item .right-content h4 {
+    margin-top: 11px;
+    margin-bottom: 7px;
+    letter-spacing: 0.25px;
+    color: #232d39;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-top: 214px;
+}
+
+section#video {
+    display: none;
+}
+
+}
+
+
+    /*
+    font-size: larger;
+    font-weight: 600;
+    */
